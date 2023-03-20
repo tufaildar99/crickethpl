@@ -1,0 +1,196 @@
+
+/* Change the font color to white */
+.navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  /* Change the hover color to a lighter shade of green */
+  .navbar-nav .nav-link:hover {
+    color: #e6ffe6;
+  }
+
+  .navbar-brand {
+    display: inline-block;
+    margin-right: auto;
+  }
+ 
+ 
+  .navbar-toggler-icon.rotate {
+    transform: rotate(180deg);
+  }
+    
+
+/* Change the font size and line height of the website title */
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5; /* Add this line */
+  }
+  
+  /* Add a max-width and word-wrap to the website title */
+  .navbar-brand {
+    max-width: 100%; /* Add this line */
+    word-wrap: break-word; /* Add this line */
+  }
+
+  .modal-header .close span {
+    display: none;
+  }
+
+  p.justify-content {
+    text-align: justify;
+  }
+  .container {
+    max-width: 800px;
+  }
+  p.lead {
+    font-size: 1.2rem;
+    
+        font-weight: 300;
+      
+      
+  }
+  table {
+    border: 2px solid green;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center;
+  }
+          
+  
+
+  .carousel-control-prev,
+.carousel-control-next {
+  width: unset;
+  height: unset;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url('path/to/left-arrow-icon.svg');
+}
+
+.carousel-control-next-icon {
+  background-image: url('path/to/right-arrow-icon.svg');
+}
+.gallerybtn, .historybtn{
+  width: 170px;
+  height: 40px;
+  font-size: 16px;
+}
+
+
+.organizer-img {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+  }
+@media (max-width: 767px) {
+  
+  }
+  .card {
+    border: none;
+  }
+  
+ 
+
+  @media (max-width: 767.98px) {
+    /* Small devices (phones, 576px and up) */
+    .navbar {
+      font-size: 1.2rem; /* increase font size */
+    }
+
+    
+        .lead {
+        font-size: 50px;
+        }
+        
+    
+  }
+  @media (min-width: 360px) and (max-width: 991.98px) {
+    /* Medium devices (tablets, 768px and up) */
+    .navbar {
+      font-size: 2.4rem;
+       /* increase font size */
+    }
+    .lead {
+        font-size: 2.56rem !important;
+        width: 100% !important;
+      }
+      .organizer-img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+      h2
+      {
+        font-size: 60px;;
+      }
+      
+      .gallerybtn , .historybtn {
+        width: 260px;
+        height: 70px;
+        font-size: 36px;
+      }
+   
+  }
+  .section-divider {
+    border: 0.8px solid green;
+    margin-top: 40px; /* adjust as needed */
+  }
+  
+ .testimonial-section {
+  background-color: #f8f9fa;
+  padding: 25px 0;
+}
+
+.testimonial-section .testimonial {
+  text-align: center;
+  padding: 20px;
+}
+
+.testimonial-section .testimonial .description {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.testimonial-section .testimonial-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-section .testimonial-user-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.testimonial-section .testimonial-user-info {
+  text-align: left;
+}
+
+  
+  
+
+
+  
+  

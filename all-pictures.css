@@ -1,0 +1,69 @@
+/* Styling for the grid of pictures */
+.row {
+    margin: 0;
+}
+
+.col-md-6 {
+    padding: 10px;
+}
+
+.picture {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 576px) {
+    .col-md-6 {
+        max-width: 100%;
+    }
+}
+
+/* Set max-width for container */
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Set margin and padding for columns */
+  .col-md-6 {
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  /* Set height and background size for pictures */
+  .picture {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  }
+  
+  /* Hover effect for pictures */
+  .picture:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Set smaller font size for image captions */
+  .picture p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 767px) {
+    .col-md-6 {
+      width: 100%;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    .picture {
+      height: 200px;
+    }
+  }
+  

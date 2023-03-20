@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #28a745; /* Set the background color */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem; /* Set the font size */
+    margin-right: 30px; /* Add some spacing */
+  }
+  
+  .nav-link {
+    font-size: 1.2rem; /* Set the font size */
+  }
+  
+  .navbar-toggler {
+    border: none; /* Remove the border */
+  }
+  
+  /* Center the navbar links on small screens */
+  @media (max-width: 767.98px) {
+    .navbar-nav {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    
+    .nav-item {
+      margin: 10px 0;
+    }
+    
+    .navbar-toggler {
+      margin-right: 0; /* Remove the margin */
+    }
+  }
+  
