@@ -16,15 +16,15 @@ const Results = ({ results }) => {
           </tr>
         </thead>
         <tbody>
-          {results.map((result, index) => (
+          {results.map((match, index) => (
             <tr key={index}>
               <td>
-                <Link to={`/results/${result.id}`} className={styles.link}>
-                  {result.matchName}
+                <Link to={`/match/${match.id}`} className={styles.link}>
+                  {match.matchName}
                 </Link>
               </td>
-              <td>{result.result}</td>
-              <td>{result.manOfTheMatch}</td>
+              <td>{match.result}</td>
+              <td>{match.manOfTheMatch}</td>
             </tr>
           ))}
         </tbody>

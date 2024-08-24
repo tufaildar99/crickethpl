@@ -1,0 +1,116 @@
+/* src/components/RegistrationForm/RegistrationForm.module.css */
+
+.container {
+  width: 100%; /* Full width */
+  padding: 40px 20px;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 1px solid black;
+}
+
+.heading {
+  text-align: center;
+  font-size: 28px;
+  color: #000000;
+  margin-bottom: 30px;
+  letter-spacing: 1.2px;
+}
+
+.subheading {
+  font-size: 20px;
+  color: #264653;
+  text-align: center;
+  margin: 30px 0;
+  letter-spacing: 1px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr; /* Default: Single column */
+  gap: 20px;
+  max-width: 1200px; /* Center the form on larger screens */
+  margin: 0 auto;
+  margin-top: 60px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.label {
+  font-size: 18px;
+  color: #333;
+}
+
+.input {
+  width: 90%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus {
+  border-color: #2a9d8f;
+  box-shadow: 0 0 5px rgba(42, 157, 143, 0.3);
+  outline: none;
+}
+
+.button {
+  background-color: #2a9d8f;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #21867a;
+}
+
+.button:active {
+  transform: scale(1);
+}
+
+/* Two-column layout for larger screens */
+@media (min-width: 1024px) {
+  .form {
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 20px;
+  }
+
+  .label {
+    grid-column: span 1; /* Each input takes one column */
+  }
+
+  /* Ensures the submit button spans both columns */
+  .button {
+    grid-column: span 2;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .subheading {
+    font-size: 18px;
+  }
+
+  .input {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+}

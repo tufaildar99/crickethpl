@@ -1,0 +1,73 @@
+/* src/components/Gallery/Gallery.module.css */
+
+.container {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #e9e5e5;
+  border-bottom: 1px solid black;
+}
+
+.heading {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.slider {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.slide {
+  padding: 0 10px;
+  outline: none;
+}
+
+.image {
+  width: 90%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+.viewAllWrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.viewAllButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #56a87b;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.viewAllButton:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .image {
+    height: 200px;
+  }
+
+  .viewAllButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
