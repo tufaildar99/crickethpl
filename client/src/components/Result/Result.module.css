@@ -1,0 +1,87 @@
+/* src/components/Results/Results.module.css */
+
+.container {
+  padding: 40px 20px;
+  background-color: #e9e5e5;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+}
+
+.heading {
+  text-align: center;
+  font-size: 24px;
+  color: #000000;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f4eeee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+th,
+td {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #56a87b; /* Add this line */
+}
+
+th:last-child,
+td:last-child {
+  border-right: none; /* Remove right border for last column */
+}
+
+th,
+td {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #56a87b;
+  color: #fff;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+}
+
+td {
+  font-size: 17px;
+  color: #0e0d0d;
+}
+
+.link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  th,
+  td {
+    padding: 10px 8px;
+    font-size: 15px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+}
