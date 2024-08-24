@@ -1,13 +1,9 @@
 import React from "react";
 import styles from "./Batting.module.css";
 
-const BattingScoreCard = ({ team }) => {
+const BattingScoreCard = ({ scorecard }) => {
   // Dummy data for demonstration
-  const batsmen = [
-    { name: "Batsman 1", runs: 45, balls: 30, fours: 5, sixes: 2 },
-    { name: "Batsman 2", runs: 33, balls: 22, fours: 4, sixes: 1 },
-    // Add more players
-  ];
+  const batsmen = scorecard;
 
   return (
     <table className={styles.table}>
@@ -23,7 +19,7 @@ const BattingScoreCard = ({ team }) => {
       <tbody>
         {batsmen.map((player, index) => (
           <tr key={index}>
-            <td>{player.name}</td>
+            <td>{player.playerName}</td>
             <td>{player.runs}</td>
             <td>{player.balls}</td>
             <td>{player.fours}</td>

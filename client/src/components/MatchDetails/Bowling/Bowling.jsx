@@ -3,13 +3,9 @@
 import React from "react";
 import styles from "./Bowling.module.css";
 
-const BowlingScoreCard = ({ team }) => {
+const BowlingScoreCard = ({ scorecard }) => {
   // Dummy data for demonstration
-  const bowlers = [
-    { name: "Bowler 1", overs: 4, runs: 30, wickets: 2 },
-    { name: "Bowler 2", overs: 4, runs: 25, wickets: 1 },
-    // Add more bowlers
-  ];
+  const bowlers = scorecard;
 
   return (
     <table className={styles.table}>
@@ -24,9 +20,9 @@ const BowlingScoreCard = ({ team }) => {
       <tbody>
         {bowlers.map((player, index) => (
           <tr key={index}>
-            <td>{player.name}</td>
+            <td>{player.playerName}</td>
             <td>{player.overs}</td>
-            <td>{player.runs}</td>
+            <td>{player.runsConceded}</td>
             <td>{player.wickets}</td>
           </tr>
         ))}

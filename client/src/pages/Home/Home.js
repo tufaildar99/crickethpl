@@ -32,8 +32,8 @@ const results = [
       wickets: 5,
       overs: 20,
       batting: [
-        { playerName: "Player A1", runs: 45, balls: 30 },
-        { playerName: "Player A2", runs: 55, balls: 40 },
+        { playerName: "Player A1", runs: 45, balls: 30, fours: 3, sixes: 1 },
+        { playerName: "Player A2", runs: 55, balls: 40, fours: 3, sixes: 1 },
         // Add other players...
       ],
       bowling: [
@@ -47,8 +47,8 @@ const results = [
       wickets: 8,
       overs: 20,
       batting: [
-        { playerName: "Player B1", runs: 60, balls: 50 },
-        { playerName: "Player B2", runs: 30, balls: 20 },
+        { playerName: "Player B1", runs: 60, balls: 50, fours: 2, sixes: 1 },
+        { playerName: "Player B2", runs: 30, balls: 20, fours: 2, sixes: 1 },
         // Add other players...
       ],
       bowling: [
@@ -77,12 +77,17 @@ const results = [
       wickets: 6,
       overs: 20,
       batting: [
-        { playerName: "Player C1", runs: 70, balls: 45 },
-        { playerName: "Player C2", runs: 50, balls: 30 },
+        { playerName: "Player C1", runs: 70, balls: 45, fours: 2, sixes: 1 },
+        { playerName: "Player C2", runs: 50, balls: 30, fours: 2, sixes: 1 },
         // Add other players...
       ],
       bowling: [
-        { playerName: "Player D1", wickets: 2, runsConceded: 40, overs: 4 },
+        {
+          playerName: "Player D1",
+          wickets: 2,
+          runsConceded: 40,
+          overs: 4,
+        },
         // Add other bowlers...
       ],
     },
