@@ -19,7 +19,11 @@ const Results = ({ results }) => {
           {results.map((match, index) => (
             <tr key={index}>
               <td>
-                <Link to={`/match/${match.id}`} className={styles.link}>
+                <Link
+                  to={`/match/${match.id}`}
+                  state={{ match }}
+                  className={styles.link}
+                >
                   {match.matchName}
                 </Link>
               </td>

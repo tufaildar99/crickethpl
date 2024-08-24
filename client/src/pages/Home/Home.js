@@ -23,25 +23,90 @@ const results = [
     matchName: "Team A vs Team B",
     result: "Team A won by 5 wickets",
     manOfTheMatch: "Player X",
+    teamA: "Kashmir Riders",
+    teamB: "Sopore Strikers",
+    toss: "Kashmir Riders",
+    choice: "bat", // What the team chose after winning the toss
+    teamAScore: {
+      runs: 150,
+      wickets: 5,
+      overs: 20,
+      batting: [
+        { playerName: "Player A1", runs: 45, balls: 30 },
+        { playerName: "Player A2", runs: 55, balls: 40 },
+        // Add other players...
+      ],
+      bowling: [
+        { playerName: "Player B1", wickets: 2, runsConceded: 30, overs: 4 },
+        { playerName: "Player B2", wickets: 1, runsConceded: 25, overs: 4 },
+        // Add other bowlers...
+      ],
+    },
+    teamBScore: {
+      runs: 148,
+      wickets: 8,
+      overs: 20,
+      batting: [
+        { playerName: "Player B1", runs: 60, balls: 50 },
+        { playerName: "Player B2", runs: 30, balls: 20 },
+        // Add other players...
+      ],
+      bowling: [
+        { playerName: "Player A1", wickets: 3, runsConceded: 35, overs: 4 },
+        { playerName: "Player A2", wickets: 2, runsConceded: 28, overs: 4 },
+        // Add other bowlers...
+      ],
+    },
+    extras: {
+      wides: 2,
+      noBalls: 1,
+      legByes: 5,
+    },
   },
   {
     id: 2,
     matchName: "Team C vs Team D",
     result: "Team C won by 20 runs",
     manOfTheMatch: "Player Y",
+    teamA: "Team C",
+    teamB: "Team D",
+    toss: "Team D",
+    choice: "field",
+    teamAScore: {
+      runs: 180,
+      wickets: 6,
+      overs: 20,
+      batting: [
+        { playerName: "Player C1", runs: 70, balls: 45 },
+        { playerName: "Player C2", runs: 50, balls: 30 },
+        // Add other players...
+      ],
+      bowling: [
+        { playerName: "Player D1", wickets: 2, runsConceded: 40, overs: 4 },
+        // Add other bowlers...
+      ],
+    },
+    teamBScore: {
+      runs: 160,
+      wickets: 9,
+      overs: 20,
+      batting: [
+        { playerName: "Player D1", runs: 55, balls: 35 },
+        { playerName: "Player D2", runs: 40, balls: 30 },
+        // Add other players...
+      ],
+      bowling: [
+        { playerName: "Player C1", wickets: 3, runsConceded: 25, overs: 4 },
+        // Add other bowlers...
+      ],
+    },
+    extras: {
+      wides: 3,
+      noBalls: 0,
+      legByes: 2,
+    },
   },
-  {
-    id: 3,
-    matchName: "Team E vs Team F",
-    result: "Match tied",
-    manOfTheMatch: "Player Z",
-  },
-  {
-    id: 4,
-    matchName: "Team G vs Team H",
-    result: "Team H won by 8 wickets",
-    manOfTheMatch: "Player A",
-  },
+  // Add more matches as needed...
 ];
 
 const news = [

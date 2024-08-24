@@ -1,0 +1,52 @@
+.matchDetailsContainer {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.matchDetails {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid black;
+}
+
+.scorecardWrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.teamSection {
+  flex: 1 1 48%; /* Make sure two sections fit in one row */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space between the rows on smaller screens */
+}
+
+.teamSection:nth-child(odd) {
+  margin-right: 2%;
+}
+
+.teamSection:nth-child(even) {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .teamSection {
+    flex: 1 1 100%; /* Stack vertically on small screens */
+    margin-right: 0;
+  }
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
