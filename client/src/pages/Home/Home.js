@@ -141,29 +141,6 @@ const images = [
   { src: require("../../assets/images/Gallery02.png"), alt: "Image 2" },
 ];
 
-const councilMembers = [
-  {
-    name: "John Doe",
-    position: "President",
-    photo: require("../../assets/images/member1.jpg"),
-  },
-  {
-    name: "Jane Smith",
-    position: "Vice President",
-    photo: require("../../assets/images/member2.jpg"),
-  },
-  {
-    name: "Richard Roe",
-    position: "General Secretary",
-    photo: require("../../assets/images/member3.jpg"),
-  },
-  {
-    name: "Emily Davis",
-    position: "Treasurer",
-    photo: require("../../assets/images/member1.jpg"),
-  },
-];
-
 const Home = () => {
   return (
     <>
@@ -175,7 +152,7 @@ const Home = () => {
       <News newsItems={news} />
       <Gallery images={images} />
       <Broadcasting />
-      <SportsCouncil councilMembers={councilMembers} />
+      <SportsCouncil />
       <Footer />
     </>
   );
